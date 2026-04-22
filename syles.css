@@ -1,0 +1,165 @@
+main {
+   max-width: 65ch;
+   margin-inline: auto;
+   
+}
+
+footer {
+  
+    max-width: 80ch;
+    margin-inline: auto;
+    margin-block-start: 3rem;
+    padding-left: 3rem;
+    padding-block: 1.5rem 3rem;
+    background-color: #173c24;
+    border-block-start: 2px solid var(--line-color);
+    color: var(--header-text-colour);
+
+}
+
+footer * {
+  /*  margin: 0;  */
+  font-size: 0.9rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+html { 
+    font-family: "ouma-devanagari", "gill sans", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+    /*font-family: "ouma-devanagari", sans-serif;
+    font-weight: 700;
+    font-style: normal; */
+   
+    font-family: var(--body-font);
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--text-colour)
+    /*background-color: var(--bg-color)
+    idk why this is a one or the other situation rn*/;
+    background-color: #faedcd; 
+}
+
+
+main * {
+    margin-block: 0 1rem;
+    
+}
+
+:root {
+    --text-colour: #173c24;
+    --heading-colour: #173c24;
+    --link-colour: #ff60c2;
+    --header-text-colour: #faedcd;
+    --header-bg: #173c24;
+    --bg-color: #faedcd;
+    --line-color: #ccee23;
+    --heading-font: "ouma-devanagari", avenir, sans-serif;
+    --body-font: gill sans, avenir, sans-serif;
+}
+
+/*heading styles */
+h1 {
+    border-block-start: 2px solid var(--line-color);
+    margin-block-start: 4rem;
+    margin-block-end: 1rem;
+    font-family: var(--heading-font);
+    font-weight: 700;
+}
+
+h2 {
+    margin-block-start: 1.5rem;
+    margin-block-end: 0.5rem;
+    font-family: var(--heading-font);
+    font-size: 1.3rem;
+    color: var(--heading-colour)
+}
+
+header {
+    padding: 0.5rem;
+    background-color: #173c24;
+    border-block-start: 2px solid var(--line-color);
+    border-block-end: 2px solid var(--line-color);
+    color: var(--header-text-colour)
+}
+
+/*smaller text stuff*/
+a {
+    color: var(--link-colour)
+}
+a:hover {
+    text-decoration: none;
+}
+
+abbr {
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  text-decoration-color: var(--link-colour);
+  text-decoration-thickness: 2px;
+}
+
+blockquote {
+    margin-inline: 1.5rem 0;
+    border-inline-start: 2px solid var(--line-color);
+    padding-inline: 1rem;
+    font-size: 0.9rem;
+    color: var(--text-colour)
+}
+
+/*lists*/
+ul, ol {
+  padding-inline-start: 1.5rem;
+}
+
+li {
+    margin-block: 0 0.3rem;
+}
+li::marker {
+    color: var(--line-color)
+}
+
+pre { /*box w text*/
+    padding: 1rem;
+    background-color: #173c24;
+    border-radius: 13px; /*rounded corners*/
+    overflow-x: auto;
+    font-size: 0.75rem;
+    color: var(--header-text-colour);
+}
+
+figure {
+    margin-inline: 0;
+}
+
+figure img {
+    display: block;
+    margin-inline: auto;
+    border-radius: 13px;
+}
+
+figcaption {
+  margin-block-start: 0.5rem;
+  font-size: 0.8rem;
+  color: var(--text-colour);
+}
+
+.intro {
+    margin-block-end: 2rem;
+  font-size: 1.2rem;
+  padding: 1rem;
+    background-color: #173c24;
+    border-radius: 13px; /*rounded corners*/
+    overflow-x: auto;
+    color: var(--header-text-colour);
+}
+
+.caps {
+  text-transform: uppercase;
+  font-size: 0.78em;
+  font-weight: 650;
+  letter-spacing: 0.1em;
+}
